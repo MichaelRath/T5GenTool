@@ -70,7 +70,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data\ArmorData.cs" />
+    <Compile Include="Data\HullFittingsData.cs" />
+    <Compile Include="Data\HullStructureData.cs" />
+    <Compile Include="Data\HullTonnageData.cs" />
+    <Compile Include="Data\JumpFieldsData.cs" />
+    <Compile Include="Data\ShipHullData.cs" />
     <Compile Include="Data\ShipMissionData.cs" />
+    <Compile Include="Data\StarshipDriveData.cs" />
     <Compile Include="Types\CareerBase.cs" />
     <Compile Include="Types\Ship.cs" />
     <Page Include="MainWindow.xaml">

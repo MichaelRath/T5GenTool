@@ -22,11 +22,13 @@ namespace T5
     {
         private bool Loaded = false;
         private ShipMissionData shipMissionData;
+        private ShipHullData shipHullData;
 
         public MainWindow()
         {
             this.InitializeComponent();
             shipMissionData = new ShipMissionData();
+            shipHullData = new ShipHullData();
             LoadData();
         }
 
@@ -39,6 +41,16 @@ namespace T5
 
 
         private void MissionTab_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void MissionServiceCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MissionActivityCbx.DataContext = shipMissionData.GetChildren(MissionServiceCbx.SelectedValue.ToString(), "", "", "");
+        }
+
+        private void MissionActivityCbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

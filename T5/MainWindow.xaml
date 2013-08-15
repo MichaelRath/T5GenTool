@@ -29,10 +29,10 @@
             <TabItem Name="MissionTab" Header="Mission" MouseLeftButtonDown="MissionTab_MouseLeftButtonDown" >
                 <Grid Background="#FFE5E5E5">
                     <Label Content="Service" HorizontalAlignment="Left" Height="26.004" Margin="10,23.607,0,0" VerticalAlignment="Top" Width="82.174"/>
-                    <ComboBox HorizontalAlignment="Left" Height="18" Margin="92.174,31.611,0,0" VerticalAlignment="Top" Width="125" Name="MissionServiceCbx" ItemsSource="{Binding}">
+                    <ComboBox HorizontalAlignment="Left" Height="18" Margin="92.174,31.611,0,0" VerticalAlignment="Top" Width="125" Name="MissionServiceCbx" ItemsSource="{Binding}" SelectionChanged="MissionServiceCbx_SelectionChanged">
                     </ComboBox>
                     <Label Content="Activity" HorizontalAlignment="Left" Height="26.004" Margin="10,65.607,0,0" VerticalAlignment="Top" Width="82.174"/>
-                    <ComboBox HorizontalAlignment="Left" Height="18" Margin="92.174,73.611,0,0" VerticalAlignment="Top" Width="125"/>
+                    <ComboBox HorizontalAlignment="Left" Height="18" Margin="92.174,73.611,0,0" VerticalAlignment="Top" Width="125" Name="MissionActivityCbx" ItemsSource="{Binding}" SelectionChanged="MissionActivityCbx_SelectionChanged"/>
                 </Grid>
             </TabItem>
             <TabItem Content="" Header="Hull"/>
